@@ -1,0 +1,26 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "order",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Order.API",
+          "Version": "1.0",
+          "Url": "https://localhost:7160/orders/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "inventory",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Inventory.API",
+          "Version": "1.0",
+          "Url": "https://localhost:7160/inventory/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
