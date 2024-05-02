@@ -9,6 +9,8 @@ namespace Inventory.Data.Models.DTO
         public ProductTypeEnum ProductType { get; set; }
         public int Quantity { get; set; }
 
+        public StockDTO() { }
+
         public StockDTO(StockEntity entity)
         {
             Id = entity.Id;

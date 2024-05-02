@@ -31,7 +31,7 @@ namespace Order.API.Controllers
         }
 
         [HttpPost]
-        public async Task<OrderDTO> Create(OrderDTO order)
+        public async Task<OrderDTO> Create([FromBody] OrderDTO order)
         {
             return await _mediator.Send(new CreateOrderCommand(order.CustomerName, order.ProductType, order.Quantity, order.Status));
         }

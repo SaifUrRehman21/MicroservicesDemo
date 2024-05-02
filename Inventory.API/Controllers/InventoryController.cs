@@ -30,7 +30,7 @@ namespace Inventory.API.Controllers
         }
 
         [HttpPost]
-        public async Task<StockDTO> Create(StockDTO stock)
+        public async Task<StockDTO> Create([FromBody] StockDTO stock)
         {
             return await _mediator.Send(new CreateStockCommand(stock.ProductType, stock.Quantity));
         }
