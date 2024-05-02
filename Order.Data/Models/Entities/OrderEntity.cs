@@ -10,12 +10,12 @@ namespace Order.Data.Models.Entities
         public int Quantity { get; private set; }
         public OrderStatusEnum Status { get; private set; }
 
-        public OrderEntity(int id, string customerName, ProductTypeEnum productType, int qunatity, OrderStatusEnum status)
+        public OrderEntity(int id, string customerName, ProductTypeEnum productType, int quantity, OrderStatusEnum status)
         {
             Id = id;
             CustomerName = customerName;
             ProductType = productType;
-            Quantity = qunatity;
+            Quantity = quantity;
             Status = status;
         }
 
